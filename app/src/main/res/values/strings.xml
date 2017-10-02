@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Uber-hj</string>
+    <string name="title_activity_user_location">UserLocation</string>
+    <string name="title_activity_view_riders_location">Map</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.hamuj.uber_hj.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/uberlogo"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <Switch
+        android:id="@+id/riderOrDriverSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="RIDER"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/riderOrDriverSwitch"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:text="DRIVER"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/riderOrDriverSwitch"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:onClick="getStarted"
+        android:text="GET STARTED"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+</RelativeLayout>
